@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Horizon Career Solutions</title>
+
+	<!-- favicon-->
+	<link rel="shortcut icon" href="./favicon.png" />		
+		
+	<!-- 960 grid-->
+	<link rel="stylesheet" href="css/960_24_col.css"/>
+		
+	<!-- templatemo style-->
+	<link rel="stylesheet" href="templatemo_style.css"/>
+    
+    <script>
+    function onkeypressed(evt, input) {
+    var code = evt.charCode || evt.keyCode;
+    if (code == 27) {
+        input.value = '';
+    }
+	}
+	</script>
+    
+</head>
+<body>
+
+<div class="container_24" align="center">
+
+    	<div class="logo">
+    
+    	</div>
+    
+    	<div class="menu omega">
+    	
+            <div class="menu alpha omega"><a class="anchor_animate search" href="index.html#search">Search</a></div>
+            <div class="menu alpha omega"><a class="anchor_animate inquiry" href="index.html#inquiry">Add</a></div>
+            <div class="menu alpha omega"><a class="anchor_animate followup" href="index.html#followup">Follow up</a></div>
+            <div class="menu alpha omega"><a class="anchor_animate enroll" href="index.html#enroll">Enroll & Fees</a></div>
+		
+        </div>
+                  	
+		<div class="main_box alpha" id="mid_container_wap">
+                      
+        	<div class="main_box alpha mid_container">                                                 
+            	
+                <h1>Enter Date&nbsp;&nbsp;</h1>
+                <form method="post" action="search_date_follow_php.php">
+                <input type="date" name="s_date" class="datebox" onkeydown="onkeypressed(event, this);" />&nbsp;&nbsp;<b style="color:#FFF">To</b>&nbsp;&nbsp;<input type="date" name="t_date" class="datebox" onkeydown="onkeypressed(event, this);" />
+                <br/>
+                <input type="submit" name="submit" value="Search" class="styled-button" />
+                <br/>                            
+                </form>                      
+
+            </div>
+          
+        </div>
+
+		<div class="footer alpha omega" align="right">
+        
+        	<div>Copyright © 2014 Horizon Career Solutions | Designed By : <a rel="nofollow" href="http://www.capslock.co.in">CapsLOCK</a></div>
+        
+        </div>
+
+</div>
+</body>
+</html>

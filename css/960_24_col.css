@@ -1,0 +1,47 @@
+
+.container_24 {
+  
+  	margin-left: auto;
+  	margin-right: auto;
+  	width:960px;
+}
+
+.menu,
+.main_box,
+.table,
+.logo {
+	
+  	margin-left: 0px;
+  	margin-right: 0px;
+}
+	
+.alpha {
+  	margin-right: 0px;
+  	float:right;
+}
+
+.omega {
+  	margin-left:0px;
+	float:left;
+}
+
+.container_24 .menu {
+  	width: 230px;
+}
+
+.container_24 .main_box {
+  	width: 710px;
+}
+
+.container_24 .table {
+  	width: 960px;
+}
+
+.container_24 .logo {
+  	width: 960px;
+}
+
+.container_24 .footer {
+  	width: 960px;
+}
+

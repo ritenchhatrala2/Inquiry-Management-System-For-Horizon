@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Horizon Career Solutions</title>
+
+	<!-- favicon-->
+	<link rel="shortcut icon" href="./favicon.png" />		
+		
+	<!-- 960 grid-->
+	<link rel="stylesheet" href="css/960_24_col.css"/>
+		
+	<!-- templatemo style-->
+	<link rel="stylesheet" href="templatemo_style.css"/>
+    		
+	<!-- jquery plugin -->
+	<script src='./js/jquery.min.js'></script>
+	<script src='./js/jquery-ui.min.js'></script>
+		
+	<!-- google map -->
+	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>-->
+		
+	<!-- templatemo config -->
+	<script src="./js/templatemo_config.js"></script>
+   
+           
+    <script>
+	function clearText(field)
+	{
+		if (field.defaultValue == field.value) field.value = '';
+		else if (field.value == '') field.value = field.defaultValue;
+	}
+
+	$(document).ready(function() {
+		$('input[type="text"]').keyup(function(e){
+			if(e.keyCode == 27) {
+				$(this).val('');
+			}
+		});
+	});
+	</script>
+
+</head>
+<body>
+			<div class="main">
+			<div class="container_24" align="center">
+                  
+                  <!-- Title -->
+                  
+					<div class="logo" align="center">
+						
+                    </div>
+                    
+                <div class="menu omega">
+                
+                  	<div class="grid_6 alpha omega"><a class="anchor_animate search transition" href="index.html#search" >Search</a></div> 
+                  	<div class="grid_6 alpha omega"><a class="anchor_animate inquiry" href="index.html#inquiry">Add</a></div>
+                  	<div class="grid_6 alpha omega"><a class="anchor_animate followup" href="index.html#followup">Follow up</a></div>
+                  	<div class="grid_6 alpha omega"><a class="anchor_animate enroll" href="index.html#enroll">Enroll & Fees</a></div>
+              	
+               	</div>
+                  	
+				<div class="main_box alpha" id="mid_container_wap">
+                      
+                      	<div class="main_box alpha mid_container" align="center">                                                 
+                            <h1>Enter Course</h1>
+                            <form method="post" action="search_course_enroll_php.php">
+            				<select name="course"  class="textbox">
+    <option value="GRE">GRE</option>
+    <option value="CAT" selected="selected">CAT</option>
+    <option value="CRAT">CRAT</option>
+    <option value="CMAT">CMAT</option>
+    <option value="CLAT">CLAT</option>
+    <option value="IBPS">IBPS</option>
+    <option value="UPSC">UPSC</option>
+    <option value="GPSC">GPSC</option>
+    <option value="GRE">SAT</option>
+    </select><br>
+                            <input type="submit" name="submit" value="Search" class="styled-button" />
+                           	<br/>                            
+  							</form>                           
+              			</div>
+	                  
+            	</div>
+                  
+              	
+                  
+              	<div class="logo alpha omega" id="footer" align="right">
+                  
+                  <div>Copyright © 2014 Horizon Career Solutions | Designed By : <a rel="nofollow" href="http://www.capslock.co.in">CapsLOCK</a></div>
+              	
+                </div>
+   </div>
+   </div>
+  </body>
+  </html>

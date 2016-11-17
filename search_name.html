@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Horizon Career Solutions</title>
+
+	<!-- favicon-->
+	<link rel="shortcut icon" href="./favicon.png" />		
+		
+	<!-- 960 grid-->
+	<link rel="stylesheet" href="css/960_24_col.css"/>
+		
+	<!-- templatemo style-->
+	<link rel="stylesheet" href="templatemo_style.css"/>
+    
+    <script>
+    
+	function onkeypressed(evt, input) {
+    var code = evt.charCode || evt.keyCode;
+    if (code == 27) {
+        input.value = '';
+    }
+	}
+/*
+	function showResult(str)
+	{
+	if (str.length==0)
+	  { 
+	  document.getElementById("livesearch").innerHTML="";
+	  document.getElementById("livesearch").style.border="0px";
+	  return;
+	  }
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+		document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+		}
+	  }
+	xmlhttp.open("GET","livesearch.php?q="+str,true);
+	xmlhttp.send();
+	}
+*/	
+    </script>
+	
+</head>
+<body>
+
+<div class="container_24" align="center">
+
+    	<div class="logo">
+    
+    	</div>
+    
+    	<div class="menu omega">
+    	
+            <div class="menu alpha omega"><a class="anchor_animate search" href="index.html#search">Search</a></div>
+            <div class="menu alpha omega"><a class="anchor_animate inquiry" href="index.html#inquiry">Add</a></div>
+            <div class="menu alpha omega"><a class="anchor_animate followup" href="index.html#followup">Follow up</a></div>
+            <div class="menu alpha omega"><a class="anchor_animate enroll" href="index.html#enroll">Enroll & Fees</a></div>
+		
+        </div>
+                  	
+		<div class="main_box alpha" id="mid_container_wap">
+                      
+        	<div class="main_box alpha mid_container">                                                 
+            	
+                <h1>Enter Name&nbsp&nbsp;</h1>
+                <form method="post" action="search_name_php.php">
+                <input type="text" name="s_name" class="textbox" onkeydown="onkeypressed(event, this);" />
+                <!--<input type="text" name="s_name" class="textbox" onkeydown="onkeypressed(event, this);" onkeyup="showResult(this.value)" />-->
+                <br/>
+                <input type="submit" name="submit" value="Search" class="styled-button" />
+                <br/>
+				<!--<div id="livesearch"></div>-->
+                <br/>
+                </form>                           
+            
+            </div>
+          
+        </div>	
+
+		<div class="footer alpha omega" align="right">
+        
+        	<div>Copyright © 2014 Horizon Career Solutions | Designed By : <a rel="nofollow" href="http://www.capslock.co.in">CapsLOCK</a></div>
+        
+        </div>
+
+</div>
+</body>
+</html>
